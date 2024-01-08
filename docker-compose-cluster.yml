@@ -146,16 +146,16 @@ services:
       - hadoop_network
     command: /bin/sh -c "./start-spark.sh"
 
-  jupyter-notebook:
-    build: ./docker/jupyter
-    container_name: jupyter-notebook
-    ports:
-      - "8888:8888"
-      - "4040:4040"
-    networks:
-     - hadoop_network
-    volumes:
-      - ./mnt/notebooks:/workspace
+#  jupyter-notebook:
+#    build: ./docker/jupyter
+#    container_name: jupyter-notebook
+#    ports:
+#      - "8888:8888"
+#      - "4040:4040"
+#    networks:
+#     - hadoop_network
+#    volumes:
+#      - ./mnt/notebooks:/workspace
 
 volumes:
   hadoop_namenode:
