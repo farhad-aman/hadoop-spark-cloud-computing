@@ -166,3 +166,4 @@ volumes:
 networks:
   hadoop_network:
     name: hadoop_network
+    external: true
